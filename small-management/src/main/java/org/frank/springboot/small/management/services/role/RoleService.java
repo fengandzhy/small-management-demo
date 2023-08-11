@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.services.role;
 
-import org.zhouhy.springboot.project1.domain.Role;
+import org.frank.springboot.small.management.domain.Role;
 
 import java.util.List;
 

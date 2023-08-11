@@ -1,16 +1,17 @@
 package org.frank.springboot.small.management.services.user.impl;
 
+import org.frank.springboot.small.management.domain.Role;
+import org.frank.springboot.small.management.domain.User;
+import org.frank.springboot.small.management.repositories.role.RoleRepository;
+import org.frank.springboot.small.management.repositories.user.UserRepository;
+import org.frank.springboot.small.management.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.zhouhy.springboot.project1.domain.Role;
-import org.zhouhy.springboot.project1.domain.User;
-import org.zhouhy.springboot.project1.repository.RoleRepository;
-import org.zhouhy.springboot.project1.repository.UserRepository;
-import org.zhouhy.springboot.project1.service.UserService;
+
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;

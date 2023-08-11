@@ -2,6 +2,10 @@ package org.frank.springboot.small.management.controllers;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
+import org.frank.springboot.small.management.domain.Company;
+import org.frank.springboot.small.management.domain.EchartsData;
+import org.frank.springboot.small.management.services.company.CompanyService;
+import org.frank.springboot.small.management.utils.UploadFileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -9,11 +13,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.zhouhy.springboot.project1.domain.Company;
-import org.zhouhy.springboot.project1.domain.EchartsData;
-import org.zhouhy.springboot.project1.service.CompanyService;
-import org.zhouhy.springboot.project1.util.UploadFileUtil;
-
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.HashMap;

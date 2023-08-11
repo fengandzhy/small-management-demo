@@ -1,14 +1,13 @@
 package org.frank.springboot.small.management.services.auth.impl.mapper;
 
 import com.alibaba.fastjson.JSONObject;
+import org.frank.springboot.small.management.domain.Auth;
 import org.springframework.stereotype.Component;
-import org.zhouhy.springboot.project1.domain.Auth;
-
 
 @Component("authServiceMapper")
 public class AuthServiceMapper {
 
-    public Auth createNewAuth(int id, String childname,int maxId){
+    public Auth createNewAuth(int id, String childname, int maxId){
         Auth newAuth=new Auth();
         newAuth.setFullName(childname);//一级节点的全称和树型显示名称一致
         newAuth.setPid(id);

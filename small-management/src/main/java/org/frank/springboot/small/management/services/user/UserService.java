@@ -1,8 +1,9 @@
 package org.frank.springboot.small.management.services.user;
 
+import org.frank.springboot.small.management.domain.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.zhouhy.springboot.project1.domain.User;
+
 
 import java.util.Map;
 

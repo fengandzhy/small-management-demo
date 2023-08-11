@@ -1,10 +1,11 @@
 package org.frank.springboot.small.management.services.role.impl;
 
+import org.frank.springboot.small.management.domain.Role;
+import org.frank.springboot.small.management.repositories.role.RoleRepository;
+import org.frank.springboot.small.management.services.role.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.zhouhy.springboot.project1.domain.Role;
-import org.zhouhy.springboot.project1.repository.RoleRepository;
-import org.zhouhy.springboot.project1.service.RoleService;
+
 
 import javax.transaction.Transactional;
 import java.util.List;

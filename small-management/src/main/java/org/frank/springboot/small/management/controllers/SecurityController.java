@@ -1,19 +1,18 @@
 package org.frank.springboot.small.management.controllers;
 
 import com.alibaba.fastjson.JSONObject;
+import org.frank.springboot.small.management.domain.Role;
+import org.frank.springboot.small.management.domain.User;
+import org.frank.springboot.small.management.domain.Ztree;
+import org.frank.springboot.small.management.services.auth.AuthService;
+import org.frank.springboot.small.management.services.role.RoleService;
+import org.frank.springboot.small.management.services.user.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.zhouhy.springboot.project1.domain.Role;
-import org.zhouhy.springboot.project1.domain.User;
-import org.zhouhy.springboot.project1.domain.Ztree;
-import org.zhouhy.springboot.project1.service.AuthService;
-import org.zhouhy.springboot.project1.service.RoleService;
-import org.zhouhy.springboot.project1.service.UserService;
-
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;

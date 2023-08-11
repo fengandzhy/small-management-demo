@@ -1,8 +1,9 @@
 package org.frank.springboot.small.management.services.company;
 
+import org.frank.springboot.small.management.domain.Company;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.zhouhy.springboot.project1.domain.Company;
+
 
 import javax.transaction.Transactional;
 import java.util.List;

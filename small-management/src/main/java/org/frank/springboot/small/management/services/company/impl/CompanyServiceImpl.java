@@ -1,13 +1,14 @@
 package org.frank.springboot.small.management.services.company.impl;
 
+import org.frank.springboot.small.management.domain.Company;
+import org.frank.springboot.small.management.repositories.company.CompanyRepository;
+import org.frank.springboot.small.management.services.company.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import org.zhouhy.springboot.project1.domain.Company;
-import org.zhouhy.springboot.project1.repository.CompanyRepository;
-import org.zhouhy.springboot.project1.service.CompanyService;
+
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
