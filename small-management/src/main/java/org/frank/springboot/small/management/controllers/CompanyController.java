@@ -2,8 +2,8 @@ package org.frank.springboot.small.management.controllers;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
-import org.frank.springboot.small.management.domain.Company;
-import org.frank.springboot.small.management.domain.EchartsData;
+import org.frank.springboot.small.management.domains.Company;
+import org.frank.springboot.small.management.domains.EchartsData;
 import org.frank.springboot.small.management.services.company.CompanyService;
 import org.frank.springboot.small.management.utils.UploadFileUtil;
 import org.springframework.beans.factory.annotation.Autowired;

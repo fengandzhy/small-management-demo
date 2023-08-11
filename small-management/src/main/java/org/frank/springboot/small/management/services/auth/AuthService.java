@@ -1,8 +1,8 @@
 package org.frank.springboot.small.management.services.auth;
 
 
-import org.frank.springboot.small.management.domain.Auth;
-import org.frank.springboot.small.management.domain.Ztree;
+import org.frank.springboot.small.management.domains.Auth;
+import org.frank.springboot.small.management.domains.Ztree;
 
 import java.util.List;
 

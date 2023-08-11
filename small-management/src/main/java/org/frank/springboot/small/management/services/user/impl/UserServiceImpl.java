@@ -1,7 +1,7 @@
 package org.frank.springboot.small.management.services.user.impl;
 
-import org.frank.springboot.small.management.domain.Role;
-import org.frank.springboot.small.management.domain.User;
+import org.frank.springboot.small.management.domains.Role;
+import org.frank.springboot.small.management.domains.User;
 import org.frank.springboot.small.management.repositories.role.RoleRepository;
 import org.frank.springboot.small.management.repositories.user.UserRepository;
 import org.frank.springboot.small.management.services.user.UserService;

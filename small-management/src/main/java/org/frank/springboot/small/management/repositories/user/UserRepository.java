@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.repositories.user;
 
-import org.frank.springboot.small.management.domain.User;
+import org.frank.springboot.small.management.domains.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;

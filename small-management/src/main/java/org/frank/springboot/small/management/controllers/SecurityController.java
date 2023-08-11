@@ -1,9 +1,9 @@
 package org.frank.springboot.small.management.controllers;
 
 import com.alibaba.fastjson.JSONObject;
-import org.frank.springboot.small.management.domain.Role;
-import org.frank.springboot.small.management.domain.User;
-import org.frank.springboot.small.management.domain.Ztree;
+import org.frank.springboot.small.management.domains.Role;
+import org.frank.springboot.small.management.domains.User;
+import org.frank.springboot.small.management.domains.Ztree;
 import org.frank.springboot.small.management.services.auth.AuthService;
 import org.frank.springboot.small.management.services.role.RoleService;
 import org.frank.springboot.small.management.services.user.UserService;

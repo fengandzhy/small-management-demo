@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.services.company.impl;
 
-import org.frank.springboot.small.management.domain.Company;
+import org.frank.springboot.small.management.domains.Company;
 import org.frank.springboot.small.management.repositories.company.CompanyRepository;
 import org.frank.springboot.small.management.services.company.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;

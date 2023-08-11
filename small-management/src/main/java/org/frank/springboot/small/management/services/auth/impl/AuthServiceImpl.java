@@ -1,9 +1,9 @@
 package org.frank.springboot.small.management.services.auth.impl;
 
 import com.alibaba.fastjson.JSON;
-import org.frank.springboot.small.management.domain.Auth;
-import org.frank.springboot.small.management.domain.Role;
-import org.frank.springboot.small.management.domain.Ztree;
+import org.frank.springboot.small.management.domains.Auth;
+import org.frank.springboot.small.management.domains.Role;
+import org.frank.springboot.small.management.domains.Ztree;
 import org.frank.springboot.small.management.repositories.auth.AuthRepository;
 import org.frank.springboot.small.management.repositories.role.RoleRepository;
 import org.frank.springboot.small.management.services.auth.AuthService;

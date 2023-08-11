@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.repositories.auth;
 
-import org.frank.springboot.small.management.domain.Auth;
+import org.frank.springboot.small.management.domains.Auth;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

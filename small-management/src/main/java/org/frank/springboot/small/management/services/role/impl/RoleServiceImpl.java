@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.services.role.impl;
 
-import org.frank.springboot.small.management.domain.Role;
+import org.frank.springboot.small.management.domains.Role;
 import org.frank.springboot.small.management.repositories.role.RoleRepository;
 import org.frank.springboot.small.management.services.role.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;

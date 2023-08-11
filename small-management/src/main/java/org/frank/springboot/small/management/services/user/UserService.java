@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.services.user;
 
-import org.frank.springboot.small.management.domain.User;
+import org.frank.springboot.small.management.domains.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

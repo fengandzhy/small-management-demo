@@ -1,7 +1,7 @@
 package org.frank.springboot.small.management.services.auth.impl.mapper;
 
 import com.alibaba.fastjson.JSONObject;
-import org.frank.springboot.small.management.domain.Auth;
+import org.frank.springboot.small.management.domains.Auth;
 import org.springframework.stereotype.Component;
 
 @Component("authServiceMapper")

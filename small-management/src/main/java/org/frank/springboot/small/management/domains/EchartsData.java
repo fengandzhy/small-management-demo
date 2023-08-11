@@ -1,4 +1,4 @@
-package org.frank.springboot.small.management.domain;
+package org.frank.springboot.small.management.domains;
 
 public class EchartsData {
 

@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.repositories.company;
 
-import org.frank.springboot.small.management.domain.Company;
+import org.frank.springboot.small.management.domains.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,6 +1,6 @@
 package org.frank.springboot.small.management.repositories.role;
 
-import org.frank.springboot.small.management.domain.Role;
+import org.frank.springboot.small.management.domains.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
