@@ -4,10 +4,10 @@ server:
     context-path: /project1
 logging:
   level:
-    root: info
-    org.zhouhy.springboot.project1: warn
+    root: info # root 级别的
+    org.frank.springboot.small.management: warn # package 级别的
   file:
-    name: logs/system.log
+    name: logs/system.log #日志输出的文件
 spring:
   jpa:
     hibernate:
