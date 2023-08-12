@@ -24,16 +24,16 @@ public class User {
     private String password;
 
     @Column(length = 100)
-    private String useremail;
+    private String userEmail;
 
     @Column(length = 100)
-    private String usermobile;
+    private String userMobile;
 
     @Column(length = 30)
-    private String sysrolename;
+    private String sysRoleName;
 
     @Column(length = 32)
-    private String sysroleid;
+    private String sysRoleId;
 
     //referencedColumnName对应的是关联表对应的列
     @OneToOne
