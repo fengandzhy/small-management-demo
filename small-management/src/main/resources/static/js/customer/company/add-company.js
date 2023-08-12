@@ -38,7 +38,7 @@ require(
                                 notEmpty: {message: '邮箱不能为空'},
                                 threshold: 2, //有2字符以上才发送ajax请求,（input中输入一个字符，插件会向服务器发送一次，设置限制，2字符以上才开始）
                                 remote: {
-                                    url: '/project1/company/validateEmail',
+                                    url: '/small-management/company/validate-email',
                                     message: '邮箱已存在',
                                     delay :  2000,
                                     type: 'POST'
@@ -76,7 +76,7 @@ require(
                                     var mylay = parent.layer.getFrameIndex(window.name);
                                     parent.layer.close(mylay);//关闭当前窗口页
                                 },
-                                url: '/project1/company/save',
+                                url: '/small-management/company/save',
                                 dataType: 'json',
                                 resetForm: true  // 成功提交后，重置所有的表单元素的值
                             };

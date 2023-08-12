@@ -81,7 +81,7 @@ public class CompanyController {
     }
 
 
-    @GetMapping("/add-companyPage")
+    @GetMapping("/add-company-page")
     public String addCompanyHtml(){
         return "/company/add-company";
     }
@@ -93,7 +93,7 @@ public class CompanyController {
 
 
 
-    @RequestMapping("validateEmail")
+    @RequestMapping("validate-email")
     @ResponseBody
     public String validateEmail(@RequestParam String contactorEmail){
         /**
