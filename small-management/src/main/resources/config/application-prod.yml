@@ -5,7 +5,7 @@ server:
 logging:
   level:
     root: info
-    org.zhouhy.springboot.project1: warn
+    org.frank.springboot.small.management: warn
   file:
     name: logs/system.log
 spring:
