@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面标题</title>
+    <script type="text/javascript" data-main="/small-management/js/customer/company/add-company.js"  src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <!--表单_新增公司-->
+    <form class="form-horizontal" id="form_Company" method="post" style="margin: 5px">
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyName"><span class="text-danger">*</span>公司名称：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="text" id="companyName" name="companyName" placeholder="填写公司全称" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyAddress"><span class="text-danger">*</span>公司地址：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="text" id="companyAddress" name="companyAddress" placeholder="填写详细地址" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyUrl"><span class="text-danger">*</span>公司网站：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="url" id="companyUrl" name="companyUrl" placeholder="如：http://www.baidu.com" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyPhone"><span class="text-danger">*</span>公司座机：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="tel" id="companyPhone" name="companyPhone" placeholder="如：010-82770788" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="establishDate">成立时间：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="text" id="establishDate" name="establishDate" placeholder="如：2005-07">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="staffAmount">员工人数：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="digits" id="staffAmount" name="staffAmount" placeholder="如：200">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="totalOutput">总产值(万元)：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="number" id="totalOutput" name="totalOutput" placeholder="如：128.0000">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyDesc">公司简介：</label>
+            <div class="col-md-9 col-sm-9">
+                <textarea  class="form-control" rows="2" id="companyDesc" name="companyDesc" placeholder="简要的描述公司状况"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="companyStatus">运营装填：</label>
+            <div class="col-md-9 col-sm-9">
+                <select class="form-control" id="companyStatus" name="companyStatus">
+                    <option value="1">正常运营</option>
+                    <option value="2">正在注销</option>
+                    <option value="3">已经注销</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="contactor"><span class="text-danger">*</span>联系人姓名：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="text" id="contactor" name="contactor" placeholder="" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="contactorMobile"><span class="text-danger">*</span>联系人手机号：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="tel" id="contactorMobile" name="contactorMobile" placeholder="" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-sm-3 text-right" for="contactorEmail"><span class="text-danger">*</span>联系人邮箱：</label>
+            <div class="col-md-9 col-sm-9">
+                <input class="form-control"  type="email" id="contactorEmail" name="contactorEmail" placeholder="" required="required">
+            </div>
+        </div>
+
+        <div class="upload" id="case" name="case" action="/project1/company/upload"
+             data-num="3" data-type="jpg,doc,pdf,docx" data-size="10240" data-value="">
+
+        </div>
+
+        <div class="ln_solid"></div>
+        <div class="form-group row">
+            <div class="col-xs-6 col-sm-6 text-right">
+                <button type="reset" class="btn btn-primary">重 置</button>
+            </div>
+            <div class="col-xs-6 col-sm-6 text-left">
+                <button id="btn_Save" type="button" class="btn btn-success">提 交</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

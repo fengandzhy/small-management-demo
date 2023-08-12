@@ -75,20 +75,20 @@ public class CompanyController {
 
 
 
-    @GetMapping("/listCompany")
+    @GetMapping("/list-company")
     public String page(){
-        return "/company/listCompany";
+        return "/company/list-company";
     }
 
 
-    @GetMapping("/addCompanyPage")
+    @GetMapping("/add-companyPage")
     public String addCompanyHtml(){
-        return "/company/addCompany";
+        return "/company/add-company";
     }
 
-    @GetMapping("/chartHtml")
+    @GetMapping("/chart-html")
     public String chartHtml(){
-        return "/company/companyChart";
+        return "/company/company-chart";
     }
 
 

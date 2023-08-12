@@ -156,9 +156,9 @@ public class SecurityController {
     }
 
     //返回AddSysUser.html页面
-    @RequestMapping("/user_create.html")
-    public String ridirectAddSysUserHtml(){
-        return "security/user_create.html";
+    @RequestMapping("/user-create.html")
+    public String redirectAddSysUserHtml(){
+        return "/security/user-create.html";
     }
 
     //保存系统账户
