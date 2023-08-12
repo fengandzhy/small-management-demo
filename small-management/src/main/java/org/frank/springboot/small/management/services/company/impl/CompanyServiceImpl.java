@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 
@@ -15,6 +16,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -26,42 +28,45 @@ public class CompanyServiceImpl implements CompanyService {
     private CompanyRepository companyRepository;
 
     @Override
-    public void Save(Company company) {
+    public void Save(@NotNull Company company) {
         companyRepository.save(company);
     }
 
     @Override
-    public void delete(String uuid) {
+    public void delete(@NotNull String uuid) {
         companyRepository.deleteById(uuid);
     }
 
     @Override
     @Transactional
-    public void update(Company company) {
+    public void update(@NotNull Company company) {
         companyRepository.save(company);
     }
 
+    @NotNull
     @Override
     public List<Company> findAll() {
         return companyRepository.findAll();
     }
 
+    @NotNull
     @Override
-    public List<Company> findByCompanyName(String companyName) {
+    public List<Company> findByCompanyName(@NotNull String companyName) {
         return companyRepository.findByCompanyName(companyName);
     }
 
+    @Nullable
     @Override
-    public Page<Company> findAllSimplePage(Pageable pageable) {
-
+    public Page<Company> findAllSimplePage(@NotNull Pageable pageable) {
         return companyRepository.findAll(pageable);
     }
 
     /**
      * 具有分页的复杂条件查询
      * */
+    @Nullable
     @Override
-    public Page<Company> queryDynamic(Map<String, Object> reqMap, Pageable pageable) {
+    public Page<Company> queryDynamic(@NotNull Map<String, Object> reqMap, @NotNull Pageable pageable) {
         Specification querySpecifi=new Specification<Company>(){
             @Override
             public Predicate toPredicate(Root<Company> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder cb){
@@ -87,7 +92,7 @@ public class CompanyServiceImpl implements CompanyService {
 
 
     @Override
-    public boolean validateEmail(String email) {
+    public boolean validateEmail(@NotNull String email) {
         int intNumber=companyRepository.validateEmail(email);
         if(intNumber==0){return true;}
         else{return false;}
