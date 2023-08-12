@@ -12,7 +12,7 @@ public interface UserService {
     void save(User sysUser);
 
     //根据账号/邮箱/手机号三者之一查询账号
-    User findByUsernameOrUseremailOrUsermobile(String username,String email,String mobile);
+    User findByUsernameOrUserEmailOrUserMobile(String username,String email,String mobile);
 
     //带查询条件的分页查询
     Page<User> queryDynamic(Map<String,Object> reqMap, Pageable pageable);

@@ -37,16 +37,16 @@ public class UserServiceImpl implements UserService {
         sysUser.setPassword(hashPassword);
 
         //根据账号对应的角色id（sysroleid），得到角色信息
-        Role sysRole=roleRepository.findByUuid(sysUser.getSysroleid());
-        sysUser.setSysrolename(sysRole.getRoleName());
+        Role sysRole=roleRepository.findByUuid(sysUser.getSysRoleId());
+        sysUser.setSysRoleName(sysRole.getRoleName());
         sysUser.setRole(sysRole);
 
         userRepository.save(sysUser);
     }
 
     @Override
-    public User findByUsernameOrUseremailOrUsermobile(String username, String email, String mobile) {
-        return userRepository.findByUsernameOrUseremailOrUsermobile(username,email,mobile);
+    public User findByUsernameOrUserEmailOrUserMobile(String username, String email, String mobile) {
+        return userRepository.findByUsernameOrUserEmailOrUserMobile(username,email,mobile);
     }
 
     @Override
