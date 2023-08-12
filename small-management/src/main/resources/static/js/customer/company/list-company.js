@@ -15,7 +15,7 @@ require(
                     }
                 };
                 $('#tb_Company').bootstrapTable({
-                    url: '/project1/company/queryDynamic',         //请求后台的URL（*）
+                    url: '/small-management/company/queryDynamic',         //请求后台的URL（*）
                     method: 'post',                      //请求方式（*）post/get
                     //striped: true,                      //是否显示行间隔色
                     classes:"table table-bordered table-sm table-hover",//启用bootstrap的表格样式 table-sm 是比较紧凑些的 具体的去这个网站看https://examples.bootstrap-table.com/#options/table-classes.html

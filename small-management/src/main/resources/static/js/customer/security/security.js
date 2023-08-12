@@ -21,7 +21,7 @@ require(
                         shade: 0.4,
                         maxmin: false,
                         area: ['800px', '380px'],
-                        content: '/project1/security/user_create.html',
+                        content: '/small-management/security/user-create.html',
                         end: function () {
                             $("#tb_SysUser").bootstrapTable('refresh');
                         }
@@ -67,7 +67,7 @@ require(
                                 closeBtn: 0,
                             },function(){ window.location.reload();});
                         },
-                        url:'/project1/security/role_create',
+                        url:'/small-management/security/role_create',
                         dataType:'json',
                         resetForm: true,  // 成功提交后，重置所有的表单元素的值
                         timeout: 5000
@@ -86,7 +86,7 @@ require(
                         layer.closeAll();
                     },function(){
                         $.ajax({
-                            url:'/project1/security/deleteRole',
+                            url:'/small-management/security/deleteRole',
                             type:'post',
                             data:{uuid:seluuid},
                             async:true,//true为异步，false为同步
@@ -146,7 +146,7 @@ require(
 
                     //根据新增加的子节点名称和当前节点的id，判断子节点名称是否重复,如果不重复则保存数据
                     $.ajax({
-                        url:'/project1/security/saveChildAuth',
+                        url:'/small-management/security/saveChildAuth',
                         type:'post',
                         data:{"id":nowid,"name":newAuthName},
                         async:true,//true为异步，false为同步
@@ -183,7 +183,7 @@ require(
                         parent.layer.close(index);
                     },function(index){
                         $.ajax({
-                            url:'/project1/security/deleteByChild',
+                            url:'/small-management/security/deleteByChild',
                             type:'post',
                             data:{id:id},
                             async:true,//true为异步，false为同步
@@ -226,7 +226,7 @@ require(
 
                     //把角色对应的所有权限映射进行保存
                     $.ajax({
-                        url:'/project1/security/role_edit',
+                        url:'/small-management/security/role_edit',
                         type:'post',
                         data:{uuid:seluuid,authinfo:strAuths},
                         async:true,//true为异步，false为同步
@@ -254,7 +254,7 @@ require(
                             layer.closeAll();
                         },function(){
                             $.ajax({
-                                url:'/project1/company/deleteByUuid',
+                                url:'/small-management/company/deleteByUuid',
                                 type:'post',
                                 data:{uuid:row.uuid},
                                 async:true,//true为异步，false为同步
@@ -273,7 +273,7 @@ require(
 
                 //数据列表展示
                 $('#tb_SysUser').bootstrapTable({
-                    url: '/project1/security/user_list',         //请求后台的URL（*）
+                    url: '/small-management/security/user_list',         //请求后台的URL（*）
                     method: 'post',                      //请求方式（*）post/get
                     //striped: true,                      //是否显示行间隔色
                     classes:"table table-bordered table-hover",//启用bootstrap的表格样式
@@ -393,7 +393,7 @@ require(
 
                     //加载权限明细树
                     $.ajax({
-                        url:'/project1/security/auth_list',
+                        url:'/small-management/security/auth_list',
                         type:'post',
                         datatype:'json',
                         data:{roleid:seluuid},
