@@ -184,7 +184,7 @@ require(
                         shade: 0.4,
                         maxmin: false,
                         area: ['700px', '700px'],
-                        content: '/small-management/company/add=company-page',
+                        content: '/small-management/company/add-company-page',
                         end: function () {
                             $("#tb_Company").bootstrapTable('refresh');
                         }
