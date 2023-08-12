@@ -16,7 +16,7 @@ require.config({
         bootstrap_validator:['https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min'],
         bootstrap_validator_CN:['https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/language/zh_CN.min'],
         jqueryform:['https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min'],
-        jqueryupload:['/small-management/js/JQuery.upload/jQuery.upload.min'],
+        jqueryupload:['/small-management/js/jquery.upload/jQuery.upload.min'],
         ztree:['/small-management/js/zTree_v3/jquery.ztree.all']
     },
     map:{
@@ -51,10 +51,10 @@ require.config({
             deps:['jquery','css!https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css','css!https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css']
         },
         jqueryupload:{
-            deps:['jquery','css!/small-management/css/JQuery.upload/upload.css']
+            deps:['jquery','css!/small-management/css/jquery.upload/upload.css']
         },
         ztree:{
-            deps:['jquery','css!/small-management/css/zTree_v3/css/zTreeStyle/zTreeStyle.css']
+            deps:['jquery','css!/small-management/css/zTree_v3/zTreeStyle.css']
         }
     }
 })
