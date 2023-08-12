@@ -21,7 +21,7 @@ public class Role {
     private  String roleName;
 
     @Column(length=200)
-    private  String roledesc;
+    private  String roleDesc;
 
     @ManyToMany(cascade = {CascadeType.REFRESH},fetch = FetchType.EAGER)
     private List<Auth> Auths;

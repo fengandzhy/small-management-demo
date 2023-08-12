@@ -1,7 +1,7 @@
 server:
   port: 8088
   servlet:
-    context-path: /project1
+    context-path: /small-management
 logging:
   level:
     root: info # root 级别的
