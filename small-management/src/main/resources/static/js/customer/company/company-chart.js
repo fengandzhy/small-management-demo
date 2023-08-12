@@ -34,7 +34,7 @@ require(
                 $.ajax({
                     type : "post",
                     async : true,
-                    url : "/project1/company/chart",
+                    url : "/small-management/company/chart",
                     dataType : "json",
                     success : function(result){
                         //请求成功时执行该函数内容，result即为服务器返回的json对象
